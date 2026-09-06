@@ -4,6 +4,28 @@ ThreadFold is a standalone, dependency-free Node.js plugin for evidence-preservi
 
 Source is available on GitHub. Native host installation, marketplace distribution and real archive/restore remain unverified. The source drafts in `docs/source/` remain historical requirements.
 
+## Why ThreadFold exists
+
+A completed task can leave a useful result spread across a representative conversation, worker threads, failed attempts and artifacts. ThreadFold aims to reduce the number of records a person must manage while preserving the decisions, constraints and unresolved issues needed for the next task. Its intended outcome is a reusable consolidation record with traceable sources, followed by reviewed archival of eligible supporting threads.
+
+**Execution safety and context value are separate questions.** A redundant-looking thread may still belong to active work; a completed thread may contain unique evidence. Fold classifies both axes and protects unknown cases. Consolidation preserves conflicts and applicability instead of choosing a conclusion just because it is newer. Archive retains source material, and restore is a separately reviewed operation. The [original design](docs/source/THREADFOLD_DESIGN.md) records this intent; the current implementation exercises it with structured claims and fixture adapters, without claiming arbitrary transcript understanding.
+
+## Technical architecture
+
+```text
+Scoped inventory -> immutable source snapshot -> consolidation record + plan
+  -> coverage review -> exact-plan approval -> adapter revalidation and apply
+  -> durable operation result -> reconciliation / separate restore plan
+```
+
+The model layer performs strict validation and conservative classification. The engine owns plan revisions, approval checks and recovery; the adapter boundary leaves native execution ownership with Hub. The store uses append-only, checksum-chained generations with an exclusive writer lock and fsync. This preserves prior evidence and makes interrupted operations inspectable, at the cost of growing storage and full-history validation on reads.
+
+Fold records intent before calling an adapter and reconciles uncertain outcomes by operation ID. A preview cannot guarantee later safety: a production adapter must revalidate effects atomically against native work starting at the same time. The current fixture adapter demonstrates this contract; it does not establish host atomicity. See [architecture](docs/ARCHITECTURE.md) and [Hub integration requirements](docs/HUB_INTEGRATION.md).
+
+## Direction
+
+The next product boundary is a verified native Hub integration with authoritative inventory, trusted scoped approval, atomic archive/restore and downstream reuse of the consolidated record. Success means the next task can find and use preserved context, as well as the user being able to review and reverse cleanup. Automatic background cleanup, permanent deletion and merging unrelated runs by topic are outside the intended first release.
+
 ## Setup
 
 Requires Node.js 22 or newer. After cloning, no npm install, network connection, browser or listening socket is needed:
