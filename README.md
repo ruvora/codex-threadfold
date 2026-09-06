@@ -2,19 +2,21 @@
 
 ThreadFold is a standalone, dependency-free Node.js plugin for evidence-preserving consolidation previews. It implements immutable local records, conservative plans, scoped approval verification and durable operation recovery. **Production Hub integration is unavailable.** Archive/restore, trusted confirmation and downstream Hub/Graph use are executable fixture simulations only.
 
-No installation, marketplace registration, thread messages, real archive/restore or publication was performed. The source drafts in `docs/source/` remain historical requirements.
+Source is available on GitHub. Native host installation, marketplace distribution and real archive/restore remain unverified. The source drafts in `docs/source/` remain historical requirements.
 
 ## Setup
 
-Requires Node.js 22 or newer. No npm install, network connection, browser or listening socket is needed. From this directory:
+Requires Node.js 22 or newer. After cloning, no npm install, network connection, browser or listening socket is needed:
 
 ```sh
-/Users/sin-yebin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node bin/threadfold.js help
-/Users/sin-yebin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test
-/Users/sin-yebin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/validate-package.js
+git clone https://github.com/ruvora/codex-threadfold.git threadfold
+cd threadfold
+node bin/threadfold.js help
+node --test
+node scripts/validate-package.js
 ```
 
-Use `node` on other machines where it is on PATH. Set `CODEX_MCP_NODE_PATH` to an absolute Node executable for the packaged launcher when needed. Plugin metadata is in `.codex-plugin/plugin.json`; `.mcp.json` launches `bin/launch-mcp` in production-disabled mode by default. Loading the plugin in a real host has not been verified or performed.
+Put `node` on PATH. Set `CODEX_MCP_NODE_PATH` to an absolute Node executable for the packaged launcher when needed. Plugin metadata is in `.codex-plugin/plugin.json`; `.mcp.json` launches `bin/launch-mcp` in production-disabled mode by default. Loading the plugin in a real host has not been verified or performed.
 
 All writes require an explicitly selected persistent data location for fixture use. Pass `--data DIRECTORY` or set `THREADFOLD_DATA_DIR`. Keep it outside plugin installation/cache directories. Example and test data below stay in ignored `.threadfold/` inside this project. The store rejects known `/plugins/cache/` data paths. Do not relocate data into another plugin cache; operators remain responsible for custom cache layouts and symlinks. Archive never deletes source text, worktrees, artifacts or records.
 
@@ -98,8 +100,10 @@ Plan counts distinguish all observed entries (`observedCount`) from currently vi
 
 ## Status and boundaries
 
+The [2026-09-06 post-repair acceptance](docs/POST_REPAIR_ACCEPTANCE_2026-09-06.md) and [coverage repair](docs/COV01_REPAIR_2026-09-06.md) record the latest local repair checks.
+
 See [implementation status](docs/IMPLEMENTATION_STATUS.md) for exact test results, implemented/simulated/unsupported matrix and release gates; [architecture](docs/ARCHITECTURE.md), [contracts](docs/IMPLEMENTATION_CONTRACTS.md), and [한국어 사용법](docs/USAGE_KO.md) explain behavior.
 
 The [Hub integration contract review](docs/HUB_INTEGRATION.md) separates existing individual archive/restore and general approval facilities from the missing Fold batch, receipt, cancellation, restore ownership and context-consumption contracts. `fold_capabilities` exposes production blockers and always reports `liveIntegration: false`. Official structural package validation now passes using the existing dependency-complete Python environment; the historical missing-PyYAML failures remain in the record. Structural validation does not establish installation or live integration.
 
-Local tests establish fixture safety and recovery properties only. Live Hub batch APIs, trusted user confirmation, native conditional archive/descendant effects, real Graph integration, host loading and actual downstream context use remain unverified. Cross-account transfer, native G0/G3 and destructive integration are outside this product's local verification. Private repository creation, visibility verification, installation and publishing remain parent-owned follow-up work.
+Local tests establish fixture safety and recovery properties only. Live Hub batch APIs, trusted user confirmation, native conditional archive/descendant effects, real Graph integration, host loading and actual downstream context use remain unverified. Cross-account transfer, native G0/G3 and destructive integration are outside this product's local verification.
