@@ -1,0 +1,50 @@
+{
+  "kind": "current-file-inspection-not-test-execution",
+  "cwd": "/Users/sin-yebin/Desktop/project/threadfold",
+  "project": "threadfold",
+  "workspaceLockPresent": false,
+  "sourceChecks": {
+    "docs/source/THREADFOLD_CONTRACTS.md": {
+      "expected": "37cd9ffbe165d4c030fc450ba4a1a322aeeb367abaac6c48ccf7a5dfd46dcb20",
+      "actual": "37cd9ffbe165d4c030fc450ba4a1a322aeeb367abaac6c48ccf7a5dfd46dcb20",
+      "matches": true
+    },
+    "docs/source/THREADFOLD_DESIGN.md": {
+      "expected": "fb7cf2d16f99fc144d7d1866d8737ba0a958517e02eb24c59fc368010d0b5743",
+      "actual": "fb7cf2d16f99fc144d7d1866d8737ba0a958517e02eb24c59fc368010d0b5743",
+      "matches": true
+    }
+  },
+  "hashes": {
+    "docs/source/THREADFOLD_CONTRACTS.md": "37cd9ffbe165d4c030fc450ba4a1a322aeeb367abaac6c48ccf7a5dfd46dcb20",
+    "docs/source/THREADFOLD_DESIGN.md": "fb7cf2d16f99fc144d7d1866d8737ba0a958517e02eb24c59fc368010d0b5743",
+    "docs/SOURCE_HASHES.json": "ecdc5abe191858f59d0052ad812a61d2d8167eb746491944f5b2c2305952a929",
+    "README.md": "8aab23ae5bb9e816dc8ad8f2228affcd93b6735e4661f7b98a2cbe4beb793023",
+    "docs/ARCHITECTURE.md": "4c5f178fe1195013b56b89000da8c7814294b1baabe20622ffbfee7fffd6382b",
+    "docs/IMPLEMENTATION_CONTRACTS.md": "2a477129eb77c9fc68a3e4b32c15297abec4c35eb1601dd077875a943dbe7abe",
+    "docs/IMPLEMENTATION_STATUS.md": "fd9756c7aea8a7263c96a04fe00e16d7555a357ec365ee5343c86de08b4380e4",
+    "docs/HUB_INTEGRATION.md": "23b1761aab190a3fcdaa59660f28bfb94e2e54a4e5085842506faf8514741e3a",
+    "docs/USAGE_KO.md": "6469e1f6b6ca28a76b2eeca2c422ec53e59f08783cc71c11d6eb1dc94c46a087",
+    "docs/VERIFICATION_2026-09-06_CONTINUATION.md": "cd69e135e51322b266df163ef3d929b580bca129b562e9fc0260b49410bd5be1",
+    "src/adapters.js": "aaec046b1d79c37dd331d582d30a064b1502575af2b4832904c69fd1728844b3",
+    "src/contracts.d.ts": "4aa63b65e67b430bede9615188e8302f2f820da18f2cd793e9597961a41e542b",
+    "src/engine.js": "42b26288a210edce0f4becdfd49e56662fb8bee11030b5853947f4dc2f0d513e",
+    "src/model.js": "cb1042867ee6eceb2a5f37974c74e0ba1a5abd932d4af9cf64c9873991590e96",
+    "src/store.js": "cba396e450fa689b87787e2bf13baa9e96b7ee4a4285c8d1b8d257eecfe005db",
+    "src/tools.js": "3089ab84cf47f82d814b52a0f3a118407e188d17a1a547eb55c351baa5dcf422",
+    "test/core.test.js": "f0161e66c4e94a18201b058ec23c0e170cc3db0d8858cdc792c82af769d70398",
+    "bin/threadfold.js": "eacb9fe11230377f226221313e58f05a86812f8ec0dd305478477e4185e197f1",
+    "bin/launch-mcp": "631e08b9053e18aa13eee005447f531c3e977744c780bff4512c794d0ab81b28",
+    "scripts/validate-package.js": "7ec329d7b23da0e30ca4ab90a4e1c012f281911521a7969aaa30e824bb769eb3",
+    "package.json": "354c7d74b2e47fb86a615c2826cb142727add5f44672bfaa1e6e92c8bfc85a7f",
+    ".codex-plugin/plugin.json": "f9629cee45b4095d7fcc8f239b8d8399fd16e828eadaf86c985951aa6e194947",
+    ".mcp.json": "6ee6717b0bd4bd1481cebb8bf595b3ad3fd353b8c8a6260dc52407555b9651ba",
+    "skills/threadfold/SKILL.md": "c0eb02f74f4a27ac6977dfa1c5ebbd1f9e81c026a6c3fda3856477b1d0e88943",
+    "docs/verification/2026-09-06-continuation/node-test.log": "79fbcdbff4f78019593f126cd738b34bc800417a33a4f47de810643dccd0e596",
+    "docs/verification/2026-09-06-continuation/node-test-final.log": "e744d3eeb37297f77cb315241ad2d7f1169ea142247f8c469f7fb4a63772f252",
+    "docs/verification/2026-09-06-continuation/local-package.log": "27e0b6f9992ccf6dcaa0715e781b2868a927ac65206f239dc80812bd81a0c580",
+    "docs/verification/2026-09-06-continuation/official-validator.log": "2d9e1fb773d18ee43432a2ed8594730948f55824c1b45a31dc4d9d8af883f328"
+  },
+  "historicalTestCodeByteIdentity": "not established by the saved test logs; current hashes do not backdate a test run"
+}
+PASS current original-source baseline comparison; saved logs and current files fingerprinted. No product tests or package validators executed.

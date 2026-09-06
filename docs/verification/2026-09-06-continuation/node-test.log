@@ -1,0 +1,107 @@
+✔ canonical digests ignore object order and reject invalid JSON numbers (1.294459ms)
+✔ protection: active Turn (158.985625ms)
+✔ protection: valid lease (158.120833ms)
+✔ protection: pending followup (180.583792ms)
+✔ protection: preserved (187.394208ms)
+✔ protection: unmerged (195.1745ms)
+✔ protection: unknown safety (199.089334ms)
+✔ protection: shared active Run (190.85275ms)
+✔ protection: unknown Run (191.359834ms)
+✔ protection: unmanaged personal thread (196.23475ms)
+✔ protection: divergent state (202.072334ms)
+✔ protection: unknown effects (197.409375ms)
+✔ protection: unknown references (200.436667ms)
+✔ protection: previously archived (192.600625ms)
+✔ partial inventory pages block prepare/apply readiness (64.375459ms)
+✔ unreadable source blocks the entire Run, including other eligible threads (65.892208ms)
+✔ missing source text blocks whole-Run coverage (62.820583ms)
+✔ descendant expansion is excluded rather than silently approved (176.449083ms)
+✔ ambiguous representative requires explicit revised selection (80.16ms)
+✔ provenance, fixed sections, conflict and branch applicability survive consolidation (61.209416ms)
+✔ foreign provenance and duplicate canonical identities are rejected (0.635959ms)
+✔ revision is immutable, excludes requested targets, invalidates approval and detects tampering (116.278583ms)
+✔ draft review is necessary but never sufficient as approval (101.966042ms)
+✔ approval rejects expiry, revocation, foreign issuer, wrong effects and forged signature (78.205917ms)
+✔ plan expiration fails closed (65.665ms)
+✔ approval followed by source change is blocked (190.582667ms)
+✔ approval followed by preserve change is blocked (189.977167ms)
+✔ approval followed by resume change is blocked (190.842042ms)
+✔ approval followed by effects change is blocked (200.017458ms)
+✔ idempotent retry does not remutate and key payload conflicts reject (217.617291ms)
+✔ partial failure preserves successes and restore contains only verified owned changes (342.081666ms)
+✔ archive response loss reconciles actual state without duplicate effect (194.554917ms)
+✔ all item failures are failed, never success (173.687125ms)
+✔ post-intent interruption restarts as attention without blindly replaying (104.692458ms)
+✔ durable host result survives actual subprocess exit and is reconciled on restart (217.307375ms)
+✔ restore protects subsequent preserve changes (313.966333ms)
+✔ restore protects subsequent revision changes (348.556125ms)
+✔ restore protects subsequent owner changes (344.444833ms)
+✔ restore protects subsequent active changes (324.96975ms)
+✔ restore requires distinct scoped approval and revalidates changes after preview (296.638583ms)
+✔ fencing and reservation expiry prevent stale simulated batch (104.670125ms)
+✔ durable store commit failure, lock contention, immutable generations, corruption and unsupported versions (73.898125ms)
+✔ record storage failure prevents any host effect (39.349167ms)
+✔ graph absence and stale published graph are advisory only (122.386416ms)
+✔ context consumption pins digest and applicability, rejects draft, stale, superseded and withdrawn records (132.9855ms)
+✔ production and missing trusted approval fail closed (15.879625ms)
+✖ MCP tools validate inputs and expose no approval issuer or signing key parameter (15.188458ms)
+✔ CLI and actual stdio MCP use pipes without sockets (221.137834ms)
+✔ approval expiry and revocation at actual mutation boundary are rechecked (311.804083ms)
+✔ pinned context selects only applicable claims and rejects foreign claim selection (64.977459ms)
+✔ restored and superseded records cannot be reused as active context (379.642583ms)
+✔ intent persistence failure prevents host reservation and mutations (69.409084ms)
+✔ unknown or mismatched host outcomes never become verified success (78.404041ms)
+✔ post-host user changes require reconciliation instead of assuming API success (186.000042ms)
+✔ store checksum and generation gap failures are detected (43.901417ms)
+✔ abrupt exit during store commit retains readable generation and blocks lock stealing (90.568917ms)
+✔ packaged launcher starts actual MCP through the configured Node binary (59.34375ms)
+✔ an unresolved earlier operation blocks overlapping new plans (114.189541ms)
+✔ installation cache data directories are rejected before writes (0.105333ms)
+✔ unconfigured data paths fail without creating files (13.541042ms)
+✔ plan read reports current operation, stale revision and expiry without mutating immutable plans (226.36ms)
+✔ cancel unstarted plan preserves revisions, withdraws context and rejects old approvals (120.548958ms)
+✔ explicit cancellation settles interrupted intent and unblocks a newly reviewed plan after restart (372.615792ms)
+✔ cancellation fences a delayed reserved apply without invoking approval or archiving (103.608917ms)
+✔ cancellation racing before fixture mutation survives the original apply continuation (214.720959ms)
+✔ cancellation after host commit reconciles real fixture effects and never rolls them back (274.27375ms)
+✔ lost cancellation response recovers its durable no-effect result without a new receipt (119.337958ms)
+✔ cancelling a restore preview does not withdraw an active archive record (227.281334ms)
+✔ context reuse rejects changed run identity even with identical source text (68.222541ms)
+✔ context reuse rejects changed path identity even with identical source text (62.927209ms)
+✔ context reuse rejects changed membership identity even with identical source text (66.501125ms)
+✔ context reuse rejects changed project identity even with identical source text (71.88375ms)
+✔ context reuse rejects changed management identity even with identical source text (77.356ms)
+✔ visible list preview excludes prearchived items and labels unknown counts (130.153208ms)
+✔ malformed result ownership and cancelled-with-effects are never accepted (173.222916ms)
+✔ production cancellation and capability reporting remain unavailable (12.250083ms)
+ℹ tests 76
+ℹ suites 0
+ℹ pass 75
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11514.636916
+
+✖ failing tests:
+
+test at test/core.test.js:270:1
+✖ MCP tools validate inputs and expose no approval issuer or signing key parameter (15.188458ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  13 !== 11
+  
+      at TestContext.<anonymous> (file:///Users/sin-yebin/Desktop/project/threadfold/test/core.test.js:277:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 13,
+    expected: 11,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

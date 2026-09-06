@@ -1,0 +1,17 @@
+{
+  "name": "threadfold",
+  "version": "0.1.0",
+  "description": "RUVORA ThreadFold: local consolidation previews and explicit fixture simulations. Production integration unavailable.",
+  "author": {"name": "RUVORA"},
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "RUVORA ThreadFold",
+    "shortDescription": "Provenance-preserving local consolidation previews",
+    "longDescription": "Inspect and revise local fixture plans with immutable provenance and durable recovery. Production Hub mutation requires unavailable trusted capabilities.",
+    "developerName": "RUVORA",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": ["Preview a ThreadFold consolidation plan and explain protected threads."]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "post-repair-current-file-comparison-not-test-run",
+  "cwd": "/Users/sin-yebin/Desktop/project/threadfold",
+  "changes": [
+    {
+      "file": "src/model.js",
+      "before": "cb1042867ee6eceb2a5f37974c74e0ba1a5abd932d4af9cf64c9873991590e96",
+      "current": "df401bb8bf49108162ffcad212acd3331444ad670fa6e4f84891fcacdedfed0a"
+    },
+    {
+      "file": "test/core.test.js",
+      "before": "f0161e66c4e94a18201b058ec23c0e170cc3db0d8858cdc792c82af769d70398",
+      "current": "c513951b0708bbedf455b2488de806d184695fb6812f9777ca20916cac7607a4"
+    }
+  ],
+  "unchangedFiles": [
+    "docs/source/THREADFOLD_CONTRACTS.md",
+    "docs/source/THREADFOLD_DESIGN.md",
+    "docs/SOURCE_HASHES.json",
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/IMPLEMENTATION_CONTRACTS.md",
+    "docs/IMPLEMENTATION_STATUS.md",
+    "docs/HUB_INTEGRATION.md",
+    "docs/USAGE_KO.md",
+    "docs/VERIFICATION_2026-09-06_CONTINUATION.md",
+    "src/adapters.js",
+    "src/contracts.d.ts",
+    "src/engine.js",
+    "src/store.js",
+    "src/tools.js",
+    "bin/threadfold.js",
+    "bin/launch-mcp",
+    "scripts/validate-package.js",
+    "package.json",
+    ".codex-plugin/plugin.json",
+    ".mcp.json",
+    "skills/threadfold/SKILL.md",
+    "docs/verification/2026-09-06-continuation/node-test.log",
+    "docs/verification/2026-09-06-continuation/node-test-final.log",
+    "docs/verification/2026-09-06-continuation/local-package.log",
+    "docs/verification/2026-09-06-continuation/official-validator.log"
+  ],
+  "sources": [
+    {
+      "file": "docs/source/THREADFOLD_DESIGN.md",
+      "expected": "fb7cf2d16f99fc144d7d1866d8737ba0a958517e02eb24c59fc368010d0b5743",
+      "current": "fb7cf2d16f99fc144d7d1866d8737ba0a958517e02eb24c59fc368010d0b5743"
+    },
+    {
+      "file": "docs/source/THREADFOLD_CONTRACTS.md",
+      "expected": "37cd9ffbe165d4c030fc450ba4a1a322aeeb367abaac6c48ccf7a5dfd46dcb20",
+      "current": "37cd9ffbe165d4c030fc450ba4a1a322aeeb367abaac6c48ccf7a5dfd46dcb20"
+    }
+  ],
+  "currentEvidenceHashes": {
+    "docs/ACCEPTANCE_CONTINUATION_2026-09-06.md": "9c54a81d593651f37dcfd167cfd661148437257c34814e1654711eab1ce40665",
+    "docs/COV01_REPAIR_2026-09-06.md": "b281f4a6e8398d9ecbcf9e5569f8f32ab34cca546c6725be633fc3afe730bd43",
+    "docs/verification/2026-09-06-continuation/acceptance-coverage-observation.log": "5d0b35e661c1555ade295d55e25295b894f20535c9ddeb5c0e138e2796bc75e9",
+    "docs/verification/2026-09-06-continuation/coverage-fix-tests.log": "18073af3cfac67729f001af865c06594b6307dc93ea52e847489afe8cfe3fd27"
+  },
+  "testExecution": false,
+  "historicalTestCodeByteIdentity": "test log does not itself contain a source hash manifest"
+}
+PASS file comparison: only the documented model/test repair differs from the previous audit; original source baselines and all other previously fingerprinted files match. No product tests executed.

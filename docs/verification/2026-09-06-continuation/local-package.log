@@ -1,0 +1,2 @@
+PASS local package checks: manifest, companion MCP, launcher, skill metadata, source hashes
+Scope: repository-local validation only; official Python validator and live host loading are separate checks.

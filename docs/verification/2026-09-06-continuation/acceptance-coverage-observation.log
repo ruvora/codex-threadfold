@@ -1,0 +1,40 @@
+{
+  "kind": "new-targeted-observation-not-full-test-suite",
+  "finding": "COV-01: conflicting claims remain preserved in coverage; conflict mapping is only in conflicts[]",
+  "conflicts": [
+    {
+      "topic": "acceptance-coverage-conflict",
+      "claimIds": [
+        "99a909b382db8a80aa85a10ed81444749ce1d38c2707ae9fcb62dca896403367",
+        "f52d2ac1ebc8dc99b4c3061c1f965aac9417a0194bb447004d4509b4d880034b"
+      ],
+      "resolution": "unresolved"
+    }
+  ],
+  "coverage": [
+    {
+      "threadRef": {
+        "hostId": "fixture-host",
+        "threadId": "thread-1"
+      },
+      "sourceClaimId": "claim-1",
+      "claimId": "99a909b382db8a80aa85a10ed81444749ce1d38c2707ae9fcb62dca896403367",
+      "status": "preserved"
+    },
+    {
+      "threadRef": {
+        "hostId": "fixture-host",
+        "threadId": "thread-2"
+      },
+      "sourceClaimId": "claim-2",
+      "claimId": "f52d2ac1ebc8dc99b4c3061c1f965aac9417a0194bb447004d4509b4d880034b",
+      "status": "preserved"
+    }
+  ],
+  "sourceTextsRetained": [
+    "Use storage option A.",
+    "Use storage option B."
+  ],
+  "mutationScope": "in-memory fixture copy only; no Store, Hub, approval, or native call"
+}
+REPRODUCED COV-01; exit success indicates observation completed, not the coverage contract passed.

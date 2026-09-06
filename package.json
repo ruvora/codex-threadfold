@@ -1,0 +1,7 @@
+{
+  "name": "threadfold", "version": "0.1.0", "private": true,
+  "description": "RUVORA ThreadFold local core and capability-gated fixture integration",
+  "type": "module", "engines": {"node": ">=22"},
+  "bin": {"threadfold": "./bin/threadfold.js"},
+  "scripts": {"test": "node --test", "start": "node bin/threadfold.js"}
+}

@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "createdAt": 0,
+  "hostId": "fixture-host",
+  "canonicalProjectId": "fixture-project",
+  "canonicalProjectPath": "/fixture/project",
+  "branch": "main",
+  "runId": "fixture-run",
+  "hubRevision": 1,
+  "completeness": "complete",
+  "runs": [
+    {
+      "runId": "fixture-run",
+      "status": "completed",
+      "pending": false
+    }
+  ],
+  "threads": [
+    {
+      "ref": {
+        "hostId": "fixture-host",
+        "threadId": "thread-0"
+      },
+      "projectId": "fixture-project",
+      "stateRevision": 1,
+      "runRefs": [
+        "fixture-run"
+      ],
+      "sourceText": "Keep the representative result accessible.",
+      "claims": [
+        {
+          "claimId": "claim-0",
+          "section": "goal",
+          "text": "Keep the representative result accessible.",
+          "kind": "observation",
+          "evidenceRefs": [
+            {
+              "threadRef": {
+                "hostId": "fixture-host",
+                "threadId": "thread-0"
+              },
+              "turnId": "turn-0",
+              "artifactRef": "fixture://result/0"
+            }
+          ],
+          "applicability": {
+            "projectId": "fixture-project",
+            "branch": "main",
+            "version": "fixture-v1"
+          }
+        }
+      ],
+      "readable": true,
+      "managed": true,
+      "referencesComplete": true,
+      "effectsKnown": true,
+      "effectRefs": [
+        {
+          "hostId": "fixture-host",
+          "threadId": "thread-0"
+        }
+      ],
+      "activeTurn": false,
+      "lease": false,
+      "pending": false,
+      "preserved": false,
+      "unmerged": false,
+      "archived": false,
+      "hubArchived": false,
+      "representative": true
+    },
+    {
+      "ref": {
+        "hostId": "fixture-host",
+        "threadId": "thread-1"
+      },
+      "projectId": "fixture-project",
+      "stateRevision": 1,
+      "runRefs": [
+        "fixture-run"
+      ],
+      "sourceText": "Retain original evidence and constraints.",
+      "claims": [
+        {
+          "claimId": "claim-1",
+          "section": "constraints",
+          "text": "Retain original evidence and constraints.",
+          "kind": "observation",
+          "evidenceRefs": [
+            {
+              "threadRef": {
+                "hostId": "fixture-host",
+                "threadId": "thread-1"
+              },
+              "turnId": "turn-1",
+              "artifactRef": "fixture://result/1"
+            }
+          ],
+          "applicability": {
+            "projectId": "fixture-project",
+            "branch": "main",
+            "version": "fixture-v1"
+          }
+        }
+      ],
+      "readable": true,
+      "managed": true,
+      "referencesComplete": true,
+      "effectsKnown": true,
+      "effectRefs": [
+        {
+          "hostId": "fixture-host",
+          "threadId": "thread-1"
+        }
+      ],
+      "activeTurn": false,
+      "lease": false,
+      "pending": false,
+      "preserved": false,
+      "unmerged": false,
+      "archived": false,
+      "hubArchived": false,
+      "representative": false
+    },
+    {
+      "ref": {
+        "hostId": "fixture-host",
+        "threadId": "thread-2"
+      },
+      "projectId": "fixture-project",
+      "stateRevision": 1,
+      "runRefs": [
+        "fixture-run"
+      ],
+      "sourceText": "Verify partial failures before claiming completion.",
+      "claims": [
+        {
+          "claimId": "claim-2",
+          "section": "validation",
+          "text": "Verify partial failures before claiming completion.",
+          "kind": "observation",
+          "evidenceRefs": [
+            {
+              "threadRef": {
+                "hostId": "fixture-host",
+                "threadId": "thread-2"
+              },
+              "turnId": "turn-2",
+              "artifactRef": "fixture://result/2"
+            }
+          ],
+          "applicability": {
+            "projectId": "fixture-project",
+            "branch": "main",
+            "version": "fixture-v1"
+          }
+        }
+      ],
+      "readable": true,
+      "managed": true,
+      "referencesComplete": true,
+      "effectsKnown": true,
+      "effectRefs": [
+        {
+          "hostId": "fixture-host",
+          "threadId": "thread-2"
+        }
+      ],
+      "activeTurn": false,
+      "lease": false,
+      "pending": false,
+      "preserved": false,
+      "unmerged": false,
+      "archived": false,
+      "hubArchived": false,
+      "representative": false
+    }
+  ]
+}
